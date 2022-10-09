@@ -1,0 +1,14 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78 64" width="78" height="64">
+	<title>New Project</title>
+	<defs>
+		<image  width="64" height="64" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABAAQMAAACQp+OdAAAAAXNSR0IB2cksfwAAAANQTFRFAAAAp3o92gAAAAF0Uk5TAEDm2GYAAAAPSURBVHicY2AYBaOAfAAAAkAAAVk2oQMAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		.s0 { fill: #00576b } 
+		.s1 { fill: #994300 } 
+	</style>
+	<path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="s0" d="m52.4 55.7c-13 0-23.4-10.4-23.4-23.3 0-13 10.4-23.4 23.4-23.4 12.9 0 23.3 10.4 23.3 23.4 0 12.9-10.4 23.3-23.3 23.3zm20.1-23.3c0-11.1-9-20.1-20.1-20.1-11.1 0-20.1 9-20.1 20.1 0 11.1 9 20.1 20.1 20.1 11.1 0 20.1-9 20.1-20.1z"/>
+	<use id="Background" href="#img1" x="7" y="0"/>
+	<path id="&lt;Path&gt;" class="s1" d="m42 11.6c6.3 4.5 10.3 11.8 10.3 20.1 0 8.3-4.1 15.6-10.4 20.1-6.4-4.4-10.5-11.7-10.5-20 0-8.4 4.2-15.8 10.6-20.2z"/>
+	<path id="&lt;Path&gt;" class="s1" d="m38.7 53.7c-3.3 1.7-7.1 2.6-11 2.6-13.7 0-24.7-11-24.7-24.6 0-13.7 11-24.7 24.7-24.7 4 0 7.8 1 11.2 2.7-6.6 5.1-10.9 13.1-10.9 22.1 0 8.9 4.2 16.8 10.7 21.9z"/>
+</svg>
