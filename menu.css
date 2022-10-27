@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,600;0,800;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+  }
+ 
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+  } 
+  /* Navbar */
+
+  header{
+    background-color: rgb(102, 51, 153);
+  }
+
+ nav{
+    color: rgb(231, 215, 247);
+   
+    display: flex;
+    justify-content: space-between;
+   height: 75px;
+   align-items: center;
+  
+ }
+
+ nav .logo{
+    letter-spacing: 2px;
+ }
+ 
+nav ul{
+   list-style: none;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+   
+    
+}
+
+nav ul li a{
+    color: rgb(231, 215, 247);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+nav ul li a:hover{
+    color: rgb(214, 207, 222);
+}
+
+
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 44px;
+    height: 22px;
+    opacity: 0;
+    left: -8px;
+    cursor: pointer; 
+    z-index: 2;
+}
+
+.menu-toggle span{
+display: block;
+width: 28px;
+height: 3px;
+background-color: rgb(231, 215, 247);
+border-radius: 3px;
+transition: all 0.3s;
+
+}
+
+/* Humberger menu animation */
+.menu-toggle span:nth-child(2){
+    /* background-color: red; */
+    transform-origin: 0 0;
+
+
+}
+
+.menu-toggle span:nth-child(4){
+    /* background-color: red; */
+    transform-origin: 0 100%;
+
+
+}
+
+.menu-toggle input:checked~span:nth-child(2){
+
+transform: rotate(45deg) translate(-1px, -1px);
+}
+
+
+.menu-toggle input:checked~span:nth-child(4){
+  
+    transform: rotate(-45deg) translate(-1px, 0);
+    }
+
+
+
+    .menu-toggle input:checked~span:nth-child(3){
+        opacity: 0;
+        transform:scale(0)
+        }
+    
+
+
+/* Media Query  Tablet*/
+@media only screen and (max-width: 768px) {
+    body {
+      background-color: lightblue;
+    }
+
+    nav ul{
+         width: 60%;
+         
+     }
+  }
+
+  @media only screen and (max-width: 576px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .menu-toggle{
+        display: flex;
+    }
+
+    nav ul{
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        width: 80%;
+        height: 100vh;
+        top: 0;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: -1;
+        background-color: rgb(102, 51, 153);
+        transform: translateX(100%);
+        /* transition: all 1s; */
+    }
+
+    nav ul.slide{
+        transform: translateX(0);
+    }
+  }
